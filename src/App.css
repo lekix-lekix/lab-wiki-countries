@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+img {
+  width: 2rem;
+}
+
+a {
+  height: 5rem;
+}
+
+#country-details {
+  width: 10rem;
+}
