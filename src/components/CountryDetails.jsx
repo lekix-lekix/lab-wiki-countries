@@ -7,7 +7,6 @@ const CountryDetails = ({ data }) => {
   const { id } = useParams();
   const [isLoading, setIsLoading] = useState(true);
 
-  console.log('coucou');
   const findBorderName = (countryAlpha3) => {
     const foundCountry = data.find(
       (element) => element.alpha3Code === countryAlpha3
@@ -19,7 +18,6 @@ const CountryDetails = ({ data }) => {
     axios
       .get(`https://ih-countries-api.herokuapp.com/countries/${id}`)
       .then((response) => {
-        console.log('eh!');
         setOneCountry(response.data);
         setIsLoading(false);
       });
